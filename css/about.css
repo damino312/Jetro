@@ -119,6 +119,18 @@ a {
   font-family: inherit;
 }
 
+.title {
+  font-size: 20px !important;
+  text-transform: uppercase !important;
+  font-family: Bebas !important;
+  color: #e8663c;
+}
+
+.text {
+  font-size: 13px !important;
+  color: #414141 !important;
+}
+
 .header {
   padding: 22px 0 19px 0;
 }
@@ -139,7 +151,7 @@ a {
 }
 .header .header__flex .header__nav .nav-item {
   font-family: Bebas;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 400;
   color: #b9b9b9;
@@ -241,9 +253,7 @@ a {
   margin: 0;
   margin-bottom: 30px;
   font-family: "Helvetica Neue";
-  font-size: 12px;
   line-height: 18px;
-  color: #414141;
 }
 .bio article p:nth-of-type(4)::first-letter {
   color: red;
@@ -260,9 +270,7 @@ a {
   padding-left: 18px;
   font-family: "Helvetica Neue";
   font-style: italic;
-  font-size: 12px;
   line-height: 18px;
-  color: #414141;
 }
 .bio article .article__wrapper {
   display: flex;
@@ -361,7 +369,7 @@ a {
 }
 .footer .container .footer__list .footer__text {
   margin-top: 26px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2;
 }
 .footer .container .footer__list .footer__social .social-item {

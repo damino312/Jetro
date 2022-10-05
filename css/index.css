@@ -119,6 +119,18 @@ a {
   font-family: inherit;
 }
 
+.title {
+  font-size: 20px !important;
+  text-transform: uppercase !important;
+  font-family: Bebas !important;
+  color: #e8663c;
+}
+
+.text {
+  font-size: 13px !important;
+  color: #414141 !important;
+}
+
 .header {
   padding: 22px 0 19px 0;
 }
@@ -139,7 +151,7 @@ a {
 }
 .header .header__flex .header__nav .nav-item {
   font-family: Bebas;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 400;
   color: #b9b9b9;
@@ -203,12 +215,7 @@ a {
 .about .about__list .list-item .about__title {
   display: flex;
   align-items: center;
-  max-width: 220px;
-  font-family: Bebas;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #e8663c;
+  max-width: 260px;
 }
 .about .about__list .list-item .about__title:before {
   margin-right: 22px;
@@ -247,11 +254,7 @@ a {
 .works .works__title {
   display: inline-block;
   font-family: Bebas;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 400;
   color: #e8663c;
-  width: 84px;
 }
 .works .works__list {
   grid-template-columns: repeat(4, 1fr);
@@ -269,7 +272,7 @@ a {
   margin: 0;
   padding: 10px 0 4px 14px;
   font-family: Bebas;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #b9b9b9;
 }
@@ -277,7 +280,7 @@ a {
   margin: 0;
   padding: 0 0 10px 14px;
   font-family: Bebas;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #e8663c;
 }
@@ -312,7 +315,7 @@ a {
 }
 .footer .container .footer__list .footer__text {
   margin-top: 26px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.2;
 }
 .footer .container .footer__list .footer__social .social-item {

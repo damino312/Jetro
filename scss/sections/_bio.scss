@@ -6,9 +6,9 @@
             margin: 0;
             margin-bottom: 30px;
             font-family: 'Helvetica Neue';
-            font-size: 12px;
+            
             line-height: 18px;
-            color: $dark-color;
+            
 
             &:nth-of-type(4)::first-letter {
                 color: red;
@@ -28,9 +28,9 @@
             padding-left: 18px;
             font-family: 'Helvetica Neue';
             font-style: italic;
-            font-size: 12px;
+            
             line-height: 18px;
-            color: $dark-color;
+            
 
 
         }
