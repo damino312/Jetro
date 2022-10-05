@@ -1,0 +1,130 @@
+.bio {
+    padding-bottom: 18px;;
+
+    article {
+        p {
+            margin: 0;
+            margin-bottom: 30px;
+            font-family: 'Helvetica Neue';
+            font-size: 12px;
+            line-height: 18px;
+            color: $dark-color;
+
+            &:nth-of-type(4)::first-letter {
+                color: red;
+
+                font-size: 300%;
+                float: left;
+                font-weight: 700;
+                line-height: 80%;
+                margin-right: 5px;
+            }
+        }
+
+        blockquote {
+            margin-left: 52px;
+            margin-bottom: 30px;
+            border-left: 8px solid#e8663c;
+            padding-left: 18px;
+            font-family: 'Helvetica Neue';
+            font-style: italic;
+            font-size: 12px;
+            line-height: 18px;
+            color: $dark-color;
+
+
+        }
+
+        .article__wrapper {
+
+           &:nth-of-type(1) {
+            margin-bottom: 30px;
+           }
+
+            display: flex;
+            align-items: stretch;
+
+            &:nth-of-type(2) p:not(:last-child) {
+                margin-right: 42px;
+
+            }
+
+            &:nth-of-type(3) p:not(:last-child) {
+                margin-right: 21px;
+
+            }
+
+            .article__text {
+                margin: 0;
+            }
+
+
+            .article__img {
+                margin-right: 26px;
+
+
+            }
+        }
+
+        .article__column {
+            .column__list {
+                list-style: none;
+
+                .column-list {
+                    padding: 27px 0;
+                    width: 100%;
+                    background: #000;
+
+                    &:nth-child(1) {
+                        background-color: #effeb9;
+                        border: 1px solid #98c601;
+
+                        font-size: 14px;
+
+                        font-weight: 400;
+                        font-style: italic;
+                        color: #98c601;
+                        text-align: center;
+                    }
+
+                    &:nth-child(2) {
+                        background-color: #fbcbc1;
+                        border: 1px solid #eb5439;
+                        font-size: 14px;
+
+                        font-weight: 400;
+                        font-style: italic;
+                        color: #eb5439;
+                        text-align: center;
+                    }
+
+                    &:nth-child(3) {
+                        background-color: #ffe9ad;
+                        border: 1px solid #fab418;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-style: italic;
+                        color: #fab418;
+                        text-align: center;
+                    }
+
+                    &:nth-child(4) {
+                        background-color: #d1e4f3;
+                        border: 1px solid #4d8fcb;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-style: italic;
+                        color: #4d8fcb;
+                        text-align: center;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// дальше текст редактировать, разобраться в шрифтах

@@ -1,0 +1,10 @@
+.pictures {
+    padding-bottom: 43px;
+    .pictures__grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        .pictures__img {
+            width: auto;
+        }
+    }
+}

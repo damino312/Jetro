@@ -1,0 +1,45 @@
+.header {
+    padding: 22px 0 19px 0;
+    .header__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__logo {
+            font-family: Bebas;
+            font-size: 36px;
+            line-height: 1.2;
+            color: #e8603c;
+            
+            span {
+                font-family: inherit;
+                color: #f3af9d;
+
+            }
+        }
+        .header__nav {
+            .nav-item {
+                font-family: Bebas;
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 400;
+                color: #b9b9b9;
+                text-transform: uppercase;
+                transition: 0.3s ease;
+                &:span {
+                    font-family: Bebas;
+                    color: #f3af9d;
+                }
+                &:visited {
+                    color: #b9b9b9;
+                }
+                &:hover {
+                    opacity: 0.7;
+                    color: $orange-color;
+                }
+                &:not(:first-child) {
+                    margin-left: 26px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+
+// новости из твиттера не добавлены
+
+.footer {
+    position: relative;
+    color: white;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(232,102,60,0.5);
+        z-index: -1;
+    }
+    .container {
+        padding: 38px 35px 0 35px;
+        background: $orange-color;
+        .footer__list {
+            grid-template-columns: repeat(3, 1fr);
+            list-style: none;
+            gap: 75px;
+            .footer__title {
+                margin: 0;
+                font-family: Bebas;
+                font-size: 20px;
+                            }
+            .footer__text {
+                margin-top: 26px;
+                font-size: 12px;
+                line-height: 1.2;
+            }
+            .footer__social {
+                .social-item {
+                    height: 100%;
+                    img {
+                        width: auto;
+                        transition: 0.3s ease;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                    &:not(:first-child) {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
