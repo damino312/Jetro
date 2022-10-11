@@ -120,15 +120,15 @@ a {
 }
 
 .title {
-  font-size: 20px !important;
-  text-transform: uppercase !important;
-  font-family: Bebas !important;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Bebas;
   color: #e8663c;
 }
 
 .text {
-  font-size: 13px !important;
-  color: #414141 !important;
+  font-size: 13px;
+  color: #414141;
 }
 
 .header {
