@@ -45,6 +45,7 @@
             }
         }
         .aside {
+            gap: 20px;
             display: flex;
             justify-content: space-between;
             padding-bottom: 20px;
@@ -66,16 +67,24 @@
                 }
                 .aside__nav {
                     .aside__list {
-                        font-size: 16px;
+                        
                         .aside-item {
-                            .aside-item__link {}
+                            
+                            .aside-item__link {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
                 .aside__grid {
+                    grid-template-columns: repeat(4, 75px);
+                    gap: 15px;
+                    
                     .aside__img-link {
-                        width: 100px;
-                        height: 100px;
+                        
+                        max-width: 75px;
+                        max-height: 75px;
+                        object-fit: cover;
                         img {}
                     }
                 }
@@ -140,7 +149,13 @@
                     line-height: 30px;
                 }
                 .article__wrapper {
-                     display: block;
+                    
+                     
+                     .article__img {
+                        
+
+                     }
+
                  }
                 .article__column {
                     .column__list {
@@ -152,14 +167,23 @@
             }
         }
         .aside {
+            margin: 0;
             display: flex;
+            justify-content: space-between;
 
             
             
             padding-bottom: 20px;
             .aside__wrapper {
+                margin: 0 auto;
                 &:first-child {
-                    // max-width: 250px;
+                    
+                }
+                &:nth-child(2) {
+                    flex-grow: 0;
+                }
+                &:last-child {
+                    flex-grow: 0;
                 }
                 .aside__title {
                     font-size: 34px;
@@ -170,18 +194,20 @@
                 .aside__nav {
                     .aside__list {
                         
-                        font-size: 24px;
+                        
                         .aside-item {
                             &:not(:last-child) { margin-bottom: 6px; }
-                            .aside-item__link {}
+                            .aside-item__link {
+                                font-size: 24px;
+                            }
                         }
                     }
                 }
                 .aside__grid {
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(2, 125px);
                     .aside__img-link {
-                        max-width: 100px;
-                        max-height: 100px;
+                        max-width: 115px;
+                        max-height: 115px;
                         
                         img {}
                     }

@@ -5,28 +5,29 @@
     .aside__title {
         margin: 0;
         margin-bottom: 21px;
-        font-family: Bebas;
-        font-size: 16px;
-        color: #e8603c;
+        
+        
+        
         &:not(:first-child) {
             margin-top: 37px;
         }
     }
     .aside__text {
-        font-size: 12px;
+        
         color: $dark-color;
     }
     .aside__nav {
         margin-bottom: 12px;
         .aside__list {
-            font-size: 12px;
+            
             color: $dark-color;
             list-style: none;
             .aside-item {
                 .aside-item__link {
                     transition: 0.3s ease;
                     &:hover {
-                        opacity: 0.8;
+                        opacity: 0.7;
+                        color: #e8663c;;
                     }
                 }
             }
