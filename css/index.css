@@ -273,7 +273,7 @@ a {
   padding: 10px 0 4px 14px;
   font-family: Bebas;
   font-size: 18px;
-  font-weight: 400;
+  text-align: left;
   color: #b9b9b9;
 }
 .works .works__list-item .works__wrapper .works__date {
@@ -281,7 +281,7 @@ a {
   padding: 0 0 10px 14px;
   font-family: Bebas;
   font-size: 16px;
-  font-weight: 400;
+  text-align: left;
   color: #e8663c;
 }
 

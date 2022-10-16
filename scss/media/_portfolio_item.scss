@@ -1,0 +1,132 @@
+@media (max-width: 767.9px) {
+    .header {
+        .header__flex {
+            .header__logo {
+                font-size: 46px;
+            }
+            .header__nav {
+                .nav-item {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .page-title {
+        .container {
+            .page-title__title {
+                font-size: 30px;
+            }
+        }
+    }
+    .portfolio_item {
+        .portfolio_item__img {}
+        .portfolio_item__text {
+            font-size: 16px;
+        }
+    }
+    .works {
+        .works__title {
+            font-size: 28px;
+            width: 150px;
+        }
+        .works__list {
+            &-item {
+                .works__img {}
+                .works__wrapper {
+                    .works__subject {
+                        font-size: 26px;
+                    }
+                    .works__date {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            .footer__list {
+                .footer__title {
+                    font-size: 30px;
+                }
+                .footer__text {
+                    font-size: 18px;
+                }
+                .footer__social {
+                    .social-item {
+                        img {
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 479.9px) {
+    .header {
+        .header__flex {
+            .header__logo {
+                font-size: 50px;
+            }
+            .header__nav {
+                .nav-item {
+                    font-size: 38px;
+                }
+            }
+        }
+    }
+    .page-title {
+        .container {
+            .page-title__title {
+                font-size: 38px;
+            }
+        }
+    }
+    .portfolio_item {
+        .portfolio_item__img {}
+        .portfolio_item__text {
+            font-size: 24px;
+        }
+    }
+    .works {
+        .works__title {
+            font-size: 34px;
+            width: 100%;
+        }
+        .works__list {
+            grid-template-columns: repeat(2, 1fr);
+            &-item {
+                .works__img {}
+                .works__wrapper {
+                    .works__subject {
+                        font-size: 36px;
+                    }
+                    .works__date {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            .footer__list {
+                .footer__title {
+                    font-size: 34px;
+                }
+                .footer__text {
+                    text-align: justify;
+                    font-size: 22px;
+                }
+                .footer__social {
+                    .social-item {
+                        img {
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
