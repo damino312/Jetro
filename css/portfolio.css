@@ -219,9 +219,21 @@ a {
        column-gap: 20px;
   row-gap: 32px;
 }
-.portfolio .works .works__grid .works__grid-item {
-  -o-object-fit: cover;
-     object-fit: cover;
+.portfolio .works .works__grid .works__grid-item .black_background {
+  background: #000;
+  overflow: hidden;
+}
+.portfolio .works .works__grid .works__grid-item .black_background img {
+  position: relative;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+  display: block;
+}
+.portfolio .works .works__grid .works__grid-item .black_background img:after {
+  content: "loremdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .portfolio .works .works__grid .works__grid-item .works__wrapper {
   border: 1px solid #dbdbdb;
