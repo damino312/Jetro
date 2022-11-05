@@ -8,12 +8,10 @@
             font-family: Bebas;
             font-size: 36px;
             line-height: 1.2;
-            color: #e8603c;
-            
+            color: $orange-color;
             span {
+                color: $blush-color;
                 font-family: inherit;
-                color: #f3af9d;
-
             }
         }
         .header__nav {
@@ -22,15 +20,15 @@
                 font-size: 20px;
                 line-height: 1.2;
                 font-weight: 400;
-                color: #b9b9b9;
+                color: $gray-color;
                 text-transform: uppercase;
                 transition: 0.3s ease;
                 &:span {
                     font-family: Bebas;
-                    color: #f3af9d;
+                    color: $blush-color;
                 }
                 &:visited {
-                    color: #b9b9b9;
+                    color: $gray-color;
                 }
                 &:hover {
                     opacity: 0.7;

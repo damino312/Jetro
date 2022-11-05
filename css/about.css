@@ -143,11 +143,11 @@ a {
   font-family: Bebas;
   font-size: 36px;
   line-height: 1.2;
-  color: #e8603c;
+  color: #e8663c;
 }
 .header .header__flex .header__logo span {
-  font-family: inherit;
   color: #f3af9d;
+  font-family: inherit;
 }
 .header .header__flex .header__nav .nav-item {
   font-family: Bebas;
@@ -178,7 +178,7 @@ a {
   padding-bottom: 28px;
 }
 .page-title .container {
-  background-color: #e8603c;
+  background-color: #e8663c;
 }
 .page-title .container .page-title__title {
   margin: 17px 0 17px 19px;

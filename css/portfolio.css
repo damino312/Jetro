@@ -143,11 +143,11 @@ a {
   font-family: Bebas;
   font-size: 36px;
   line-height: 1.2;
-  color: #e8603c;
+  color: #e8663c;
 }
 .header .header__flex .header__logo span {
-  font-family: inherit;
   color: #f3af9d;
+  font-family: inherit;
 }
 .header .header__flex .header__nav .nav-item {
   font-family: Bebas;
@@ -178,7 +178,7 @@ a {
   padding-bottom: 28px;
 }
 .page-title .container {
-  background-color: #e8603c;
+  background-color: #e8663c;
 }
 .page-title .container .page-title__title {
   margin: 17px 0 17px 19px;
@@ -197,17 +197,29 @@ a {
   z-index: -1;
 }
 
+.portfolio {
+  padding-bottom: 45px;
+}
 .portfolio .sort .sort__list {
   display: flex;
   list-style: none;
+  margin-bottom: 38px;
 }
 .portfolio .sort .sort__list .sort__list-item {
-  text-transform: uppercase;
-  padding: 10px;
   color: #b9b9b9;
+  text-transform: uppercase;
+}
+.portfolio .sort .sort__list .sort__list-item:not(.portfolio__active):hover {
+  opacity: 0.8;
+  color: #e8663c;
 }
 .portfolio .sort .sort__list .sort__list-item:not(:last-child) {
   margin-right: 15px;
+}
+.portfolio .sort .sort__list .sort__list-item a {
+  padding: 10px;
+  display: block;
+  height: 100%;
 }
 .portfolio .sort .sort__list .portfolio__active {
   background: #e8663c;
@@ -220,22 +232,28 @@ a {
   row-gap: 32px;
 }
 .portfolio .works .works__grid .works__grid-item .black_background {
+  position: relative;
   background: #000;
   overflow: hidden;
+  z-index: 999;
 }
-.portfolio .works .works__grid .works__grid-item .black_background img {
-  position: relative;
+.portfolio .works .works__grid .works__grid-item .black_background a:hover:after {
+  content: url("../../images/portfolio/cross.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio .works .works__grid .works__grid-item .black_background a:hover img {
+  opacity: 0.4;
+}
+.portfolio .works .works__grid .works__grid-item .black_background a img {
   -o-object-fit: inherit;
      object-fit: inherit;
   display: block;
 }
-.portfolio .works .works__grid .works__grid-item .black_background img:after {
-  content: "loremdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .portfolio .works .works__grid .works__grid-item .works__wrapper {
+  z-index: 0;
   border: 1px solid #dbdbdb;
   border-top: none;
   position: relative;
@@ -244,7 +262,7 @@ a {
 }
 .portfolio .works .works__grid .works__grid-item .works__wrapper .works__subject {
   margin: 0;
-  padding: 10px 0 4px 14px;
+  padding: 10px 0 2px 14px;
   font-family: Bebas;
   font-size: 18px;
   text-align: left;
@@ -257,4 +275,51 @@ a {
   font-size: 16px;
   text-align: left;
   color: #e8663c;
+}
+
+.footer {
+  position: relative;
+  color: white;
+}
+.footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(232, 102, 60, 0.5);
+  z-index: -1;
+}
+.footer .container {
+  padding: 38px 35px 0 35px;
+  background: #e8663c;
+}
+.footer .container .footer__list {
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  gap: 75px;
+}
+.footer .container .footer__list .footer__title {
+  margin: 0;
+  font-family: Bebas;
+  font-size: 20px;
+}
+.footer .container .footer__list .footer__text {
+  margin-top: 26px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.footer .container .footer__list .footer__social .social-item {
+  height: 100%;
+}
+.footer .container .footer__list .footer__social .social-item img {
+  width: auto;
+  transition: 0.3s ease;
+}
+.footer .container .footer__list .footer__social .social-item img:hover {
+  opacity: 0.7;
+}
+.footer .container .footer__list .footer__social .social-item:not(:first-child) {
+  margin-left: 5px;
 }/*# sourceMappingURL=portfolio.css.map */

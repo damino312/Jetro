@@ -1,77 +1,75 @@
 .portfolio {
+    padding-bottom: 45px;
     .sort {
         .sort__list {
             display: flex;
             list-style: none;
-
+            margin-bottom: 38px;
             .sort__list-item {
-                text-transform: uppercase;
-                padding: 10px;
                 color: $gray-color;
-
+                text-transform: uppercase;
+                &:not(.portfolio__active):hover {
+                    opacity: 0.8;
+                    color: $orange-color;
+                }
                 &:not(:last-child) {
                     margin-right: 15px;
                 }
+                a {
+                    padding: 10px;
+                    display: block;
+                    height: 100%;
+                }
             }
-
             .portfolio__active {
                 background: $orange-color;
                 color: white;
-
             }
         }
     }
-
     .works {
         .works__grid {
             grid-template-columns: repeat(4, 1fr);
             column-gap: 20px;
             row-gap: 32px;
-
             .works__grid-item {
                 .black_background {
-
+                    position: relative;
                     background: #000;
                     overflow: hidden;
-
-                    img {
-                        position: relative;
+                    z-index: 999;// to border of .works__wrapper doesnt lie on the picture
+                    a {
+                        &:hover:after {
+                            content: url('../../images/portfolio/cross.png');
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                        &:hover img { // this construction allows in the moment of hoverering over the picture to display the dark background and the picture "white plus"
+                            opacity: 0.4;
+                        }
+                        img {
                         object-fit: inherit;
                         display: block;
-
-                        // &:hover {
-                        //     opacity: 0.4;
-                        // }
-
-                        &:after {
-                            content: "loremdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            // top:50%;
-                            // left:50%;
-                            // transform:translate(-50%, -50%);
-                        }
                     }
-
                 }
-
+                }
                 .works__wrapper {
+                    z-index: 0;
                     border: 1px solid #dbdbdb;
                     border-top: none;
                     position: relative;
                     bottom: 4px;
                     width: 100%;
-
                     .works__subject {
                         margin: 0;
-                        padding: 10px 0 4px 14px;
+                        padding: 10px 0 2px 14px;
                         font-family: Bebas;
                         font-size: 18px;
                         text-align: left;
                         color: $gray-color;
                     }
-
                     .works__date {
                         margin: 0;
                         padding: 0 0 10px 14px;
@@ -81,7 +79,6 @@
                         color: $orange-color;
                     }
                 }
-
             }
         }
     }
