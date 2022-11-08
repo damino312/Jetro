@@ -1,5 +1,9 @@
 .blog {
     .blog__item {
+        margin-bottom: 50px;
+        &:not(:first-child) {
+            margin-top: 56px;
+        }
         .blog__media {
             img {
                 display: block;
@@ -11,6 +15,7 @@
             .blog__info {
                 
                 margin-right: 50px;
+                min-width: 100px;
                 .blog__title_date {
                     margin: 0;
                     margin-bottom: 6px;

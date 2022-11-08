@@ -243,6 +243,12 @@ a {
   transform: scale(1.2);
 }
 
+.blog .blog__item {
+  margin-bottom: 50px;
+}
+.blog .blog__item:not(:first-child) {
+  margin-top: 56px;
+}
 .blog .blog__item .blog__media img {
   display: block;
 }
@@ -252,6 +258,7 @@ a {
 }
 .blog .blog__item .blog__flex .blog__info {
   margin-right: 50px;
+  min-width: 100px;
 }
 .blog .blog__item .blog__flex .blog__info .blog__title_date {
   margin: 0;
