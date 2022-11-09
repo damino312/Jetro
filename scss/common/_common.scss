@@ -17,15 +17,14 @@ a {
     border-right: 15px solid white; // for orange blocks outside the container (instead of padding)
     border-left: 15px solid white; // the same
 }
-.wrapper { // для совмещения сайда и другого блока
+.wrapper {
+    // для совмещения сайда и другого блока
     display: flex;
     margin: 0 auto;
     width: 970px;
     // padding: 0 15px;
-    
     border-right: 15px solid white;
     border-left: 15px solid white;
-    
     overflow: hidden;
 }
 .grid {
@@ -46,60 +45,45 @@ a {
         font-family: inherit;
     }
 }
-
 .title {
-
-    font-size: 20px ; 
-    text-transform: uppercase ;
-    font-family: Bebas ;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Bebas;
     color: $orange-color;
-
 }
-
 .text {
-    
-    font-size: 13px ;
-    color: $dark-color ;
-
+    font-size: 13px;
+    color: $dark-color;
 }
-
 .line {
     margin: 20px 0;
-	padding: 0;
-	height: 10px;
-	border: none;
-	box-sizing: border-box;
-	background-position: 50%;
-	
-	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1px" height="1px" viewBox="0 0 3 3" fill="lightgray"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
-	background-size: 6px 6px;
+    padding: 0;
+    height: 10px;
+    border: none;
+    box-sizing: border-box;
+    background-position: 50%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1px" height="1px" viewBox="0 0 3 3" fill="lightgray"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
+    background-size: 6px 6px;
+    
 }
-
 .line-after {
     position: relative;
     &:after {
         content: '';
-        
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1px" height="1px" viewBox="0 0 3 3" fill="lightgray"><polygon points="0,0.5 0,1.5 1.5,3 2.5,3"></polygon><polygon points="2.5,0 1.5,0 3,1.5 3,0.5"></polygon></svg>');
         background-size: 6px 6px;
         display: inline-block;
         position: absolute;
         width: 100%;
         top: 50%;
-        
-        
         top: 0;
-  
- 
-  bottom: 0;
-  margin: auto;
-  margin-left: 15px;
+        bottom: 0;
+        margin: auto;
+        margin-left: 15px;
         padding: 0;
         height: 15px;
         border: none;
         box-sizing: border-box;
         background-position: 50%;
-        
     }
-    
 }

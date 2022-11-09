@@ -281,12 +281,11 @@ a {
   transform: scale(1.2);
 }
 
-.blog .blog__item {
-  margin-bottom: 50px;
+*.line {
+  margin-top: 50px;
+  margin-bottom: 55px;
 }
-.blog .blog__item:not(:first-child) {
-  margin-top: 56px;
-}
+
 .blog .blog__item .blog__media img {
   display: block;
 }
@@ -297,6 +296,9 @@ a {
 .blog .blog__item .blog__flex .blog__info {
   margin-right: 50px;
   min-width: 100px;
+}
+.blog .blog__item .blog__flex .blog__info .title {
+  font-size: 16px;
 }
 .blog .blog__item .blog__flex .blog__info .blog__title_date {
   margin: 0;
@@ -331,6 +333,31 @@ a {
 .blog .blog__item .blog__flex .blog__description .blog__title {
   margin: 0;
 }
+.blog .blog__item .blog__flex .blog__description .blog__text:last-child {
+  margin-bottom: 0;
+}
+
+.quote .quote__wrapper {
+  background-color: #f5f5f5;
+  padding-left: 76px;
+}
+.quote .quote__wrapper q {
+  padding: 20px 30px 25px 0;
+  display: block;
+  position: relative;
+  font-style: italic;
+  font-size: 14px;
+  color: #414141;
+}
+.quote .quote__wrapper q:before {
+  content: url("../../images/blog/icon_quote2.png");
+  position: absolute;
+  left: -34px;
+}
+.quote .quote__wrapper q:after {
+  content: "";
+}
+
 .footer {
   position: relative;
   color: white;

@@ -290,7 +290,7 @@ a {
   padding-bottom: 48px;
 }
 .works .works__title {
-  display: inline-block;
+  display: block;
   font-family: Bebas;
   color: #e8663c;
 }

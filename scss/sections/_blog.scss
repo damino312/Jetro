@@ -1,9 +1,13 @@
+*.line {
+    margin-top: 50px;
+    margin-bottom: 55px;
+}
+
 .blog {
     .blog__item {
-        margin-bottom: 50px;
-        &:not(:first-child) {
-            margin-top: 56px;
-        }
+        
+        
+        
         .blog__media {
             img {
                 display: block;
@@ -12,7 +16,11 @@
         .blog__flex {
             margin-top: 25px;
             display: flex;
-            .blog__info {
+            .blog__info { // классы ниже можно сжать добавив другой и к нему добавить повторяющиеся значения
+
+                .title {
+                    font-size: 16px;
+                }
                 
                 margin-right: 50px;
                 min-width: 100px;
@@ -53,9 +61,12 @@
 
                 }
                 .blog__text {
-
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
+        
     }
 }
