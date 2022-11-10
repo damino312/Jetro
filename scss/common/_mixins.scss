@@ -1,0 +1,6 @@
+@mixin left-icon($link) { // for icons on "blog"
+    content: url('../../images/blog/#{$link}.png');
+    position: absolute;
+    top: 0;
+    left: -90px;
+}

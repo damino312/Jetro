@@ -1,4 +1,4 @@
-*.line {
+*.line { 
     margin-top: 50px;
     margin-bottom: 55px;
 }
@@ -9,9 +9,15 @@
         
         
         .blog__media {
+            height: 300px;
             img {
-                display: block;
+                height: 100%;
             }
+            video  {
+                height: 100%;
+                object-fit: cover;
+            }
+            
         }
         .blog__flex {
             margin-top: 25px;
