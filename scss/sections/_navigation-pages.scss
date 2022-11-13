@@ -1,0 +1,29 @@
+.navigation-pages {
+    margin-bottom: 48px;
+    .navigation-pages__ul {
+        display: flex;
+        align-self: flex-end;
+        .navigation-pages__item {
+            height: 26px;
+            width: 26px;
+            background: $orange-color;
+            list-style: none;
+            text-align: center;
+            line-height: 26px;
+            color: white;
+            &:not(:last-child) {
+                margin-right: 4px;
+            }
+            a {
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+            }
+        
+            
+            
+            
+
+        }
+    }
+}

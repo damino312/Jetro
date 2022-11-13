@@ -46,7 +46,7 @@ video {
 .active {
     color: $orange-color !important;
     span {
-        color: $blush-color;
+        color: $blush-color !important;
         font-family: inherit;
     }
 }
@@ -110,5 +110,11 @@ video {
     position: relative;
     &:before {
         @include left-icon('icon_video')
+    }
+}
+.link_icon {
+    position: relative;
+    &:before {
+        @include left-icon('icon_link')
     }
 }

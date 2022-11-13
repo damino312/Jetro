@@ -1,9 +1,11 @@
 .link {
     .link__title {
         margin: 0;
-        margin-bottom: 10px;
-        a {
-
-        }
+        margin-bottom: 2px;
+    }
+    a {
+        margin-bottom: 25px;
+        font-size: 12px;
+        color: $gray-color;
     }
 }
