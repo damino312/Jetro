@@ -99,6 +99,7 @@ video {
 
 .wrapper {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 970px;
   border-right: 15px solid white;

@@ -25,6 +25,7 @@ video {
 .wrapper {
     // для совмещения сайда и другого блока
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
     width: 970px;
     // padding: 0 15px;
