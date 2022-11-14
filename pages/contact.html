@@ -55,19 +55,46 @@
                 Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
                 Sed nisi. Nulla quis sem at nibh elementum.
               </p>
-              <p class="connection__text">Best PSD Freebies</p>
-              <p class="connection__text">328 Ave C Saskatoon, SK S7R 2V9</p>
-              <p class="connection__text"><b>t:</b>(888) 842 - 8356</p> 
-              <p class="connection__text"><b>f:</b>(888) 452 - 9257</p>
-              <p class="connection__text"><b>e:</b>info@psdfreebies.com</p>
+              <p class="connection__text text">Best PSD Freebies</p>
+              <p class="connection__text text">
+                328 Ave C Saskatoon, SK S7R 2V9
+              </p>
+              <p class="connection__text text"><b>t:</b>(888) 842 - 8356</p>
+              <p class="connection__text text"><b>f:</b>(888) 452 - 9257</p>
+              <p class="connection__text text"><b>e:</b>info@psdfreebies.com</p>
             </div>
             <div class="connection__item">
-                <form action="#">
-                    <input type="text" id="firstname">
-                    <input type="text" id="lastname">
-                    <input type="text" id="email">
-                    <textarea name="" id="message"></textarea>
-                </form>
+              <form action="#">
+                <input
+                  type="text"
+                  id="firstname"
+                  class="connection__input"
+                  placeholder="fistname"
+                  required
+                />
+                <input
+                  type="text"
+                  id="lastname"
+                  class="connection__input"
+                  placeholder="lastname"
+                  required
+                />
+                <input
+                  type="email"
+                  id="email"
+                  class="connection__input"
+                  placeholder="email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  id="message"
+                  class="connection__textarea"
+                  placeholder="message"
+                  required
+                ></textarea>
+                <button class="connection__button" type="submit">submit</button>
+              </form>
             </div>
           </div>
         </section>
