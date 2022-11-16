@@ -455,10 +455,9 @@ video {
   line-height: 1.2;
 }
 .footer .container .footer__list .footer__social .social-item {
-  height: 100%;
+  display: inline-block;
 }
 .footer .container .footer__list .footer__social .social-item img {
-  width: auto;
   transition: 0.3s ease;
 }
 .footer .container .footer__list .footer__social .social-item img:hover {
