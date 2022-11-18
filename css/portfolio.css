@@ -321,6 +321,9 @@ video {
        column-gap: 20px;
   row-gap: 32px;
 }
+.portfolio .works .works__grid .works__grid-item {
+  display: inline-block;
+}
 .portfolio .works .works__grid .works__grid-item .black_background {
   position: relative;
   background: #000;
@@ -401,14 +404,15 @@ video {
   line-height: 1.2;
 }
 .footer .container .footer__list .footer__social .social-item {
-  display: inline-block;
+  width: 100%;
 }
 .footer .container .footer__list .footer__social .social-item img {
+  width: auto;
   transition: 0.3s ease;
 }
 .footer .container .footer__list .footer__social .social-item img:hover {
   opacity: 0.7;
 }
-.footer .container .footer__list .footer__social .social-item:not(:first-child) {
-  margin-left: 5px;
+.footer .container .footer__list .footer__social .social-item:not(:last-child) {
+  margin-right: 5px;
 }/*# sourceMappingURL=portfolio.css.map */

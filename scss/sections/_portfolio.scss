@@ -33,6 +33,7 @@
             column-gap: 20px;
             row-gap: 32px;
             .works__grid-item {
+                display: inline-block;
                 .black_background {
                     position: relative;
                     background: #000;

@@ -63,7 +63,7 @@
                 .footer__social {
                     .social-item {  
                         img {
-                            width: 15%;
+                            width: 25%;
                         }                  
                     }
                 }
@@ -131,28 +131,25 @@
     }
     .footer {
         .container {
-        
-        .footer__list {
-            .footer__title {
-                font-size: 34px;
-
-            }
-            .footer__text {
-                text-align: justify;
-                font-size: 22px;
-
+            .footer__list {
+                .footer__title {
+                    font-size: 34px;
                 }
+
+                .footer__text {
+                    text-align: justify;
+                    font-size: 22px;
+                }
+
                 .footer__social {
-                    .social-item {  
+                    .social-item {
                         img {
-                            width: 15%;
-                        }                  
+                            width: 16%;
+                        }
                     }
                 }
-
             }
-            
         }
-    }
+    }   
     
 }
